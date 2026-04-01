@@ -8,7 +8,7 @@ public class BankManagement {
 
     static Connection con = DBConnection.getConnection();
 
-    // Create Account
+    
     public static void createAccount(String name, int pass) {
 
         try {
@@ -29,7 +29,7 @@ public class BankManagement {
         }
     }
 
-    // Login
+
     public static void login(String name, int pass) {
 
         try {
@@ -98,7 +98,7 @@ public class BankManagement {
         }
     }
 
-    // Deposit
+    
     public static void deposit(int ac, int amt) {
 
         if (amt <= 0) {
@@ -122,7 +122,7 @@ public class BankManagement {
         }
     }
 
-    // Withdraw
+    
     public static void withdraw(int ac, int amt) {
 
         if (amt <= 0) {
@@ -161,7 +161,7 @@ public class BankManagement {
         }
     }
 
-    // Balance
+    
     public static void balance(int ac) {
 
         try {
@@ -181,7 +181,7 @@ public class BankManagement {
         }
     }
 
-    // Transfer
+    
     public static void transfer(int s, int r, int amt) {
 
         if (amt <= 0) {
@@ -229,7 +229,7 @@ public class BankManagement {
         }
     }
 
-    // Change PIN
+    
     public static void changePin(int ac, int newPin) {
 
         try {
